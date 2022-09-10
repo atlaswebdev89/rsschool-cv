@@ -22,7 +22,7 @@ About me: assiduous, patient, communicative, propensity for exact sciences, desi
 ### Skills:
 * HTML5, CSS4,  JSON
 * Bootstrap, Flex, JQuery, Ajax
-* JavaScript (Basic)
+* JavaScript, CoffeeScript, TypeScript
 * PHP ООП
 * Composer
 * Laravel (Basic)
@@ -30,18 +30,27 @@ About me: assiduous, patient, communicative, propensity for exact sciences, desi
 * Mysql, MariaDB, ORM
 * git, github, gitlab
 * docker, docker-compose, docker swarm,  vagrant
-* gulp
+* rabbitMq, Kafka
+* gulp, webpack
 * linux (debian, ubuntu)
+* Bash Script
 
 ***
 
 ### Code Example:
 ```javascript
-function sum(a, b) {
-  return a + b;
+export const randomArray = (max, count) => {
+    const random = [];
+    for (let i = 0; i < count; i++) {
+          let rand = Math.floor(Math.random() * max); 
+          if (random.indexOf(rand) == -1) {
+              random.push(rand);
+          }else {
+              i--;
+          }
+      }
+    return random;
 }
-let result = sum(2, 5);
-console.log( result );
 ```
 
 ***
